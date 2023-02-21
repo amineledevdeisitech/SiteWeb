@@ -4,15 +4,163 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Car Luxe </title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/3010b1eaf1.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <!--ceci est un commentaire-->
-    <header>ISITECH</header>
-    <p> Hello word</p>
-    <hr>
-    <p id="test"> ceci est un paragraphe </p>
-    <img src="images/images.jpg" alt="image not found"
-</body>
+    
+    <!-- header  -->
+    <header>
+        <!-- menu responsive -->
+        
+        <div class="menu_toggle">
+            <span></span>
+        </div>
+
+        <div class="logo">
+            <p><span>Luxe</span>Cars</p>
+        </div>
+        <ul class="menu">
+            <li><a href="index.html">Acceuil</a></li>
+            <li><a href="page2.html">Services</a></li>
+            <li><a href="page3.html">Vehicules</a></li>
+        </ul>
+    
+    </header>
+    <!-- section Acceuil -->
+     
+    <section id="home">
+        <div class="left">
+            <h1>Les<span>Plus belle</span> voiture sportive</h1>
+            <p>Nous vous prÃ©sentons les meilleurs voitures sportives</p>
+        </div>
+        <div class="right">
+            <img src="img1.png">
+        </div>
+    </section>
+
+
+
+
+    <!-- section vehicule -->
+
+    <section id="cars">
+        <h1 class="section_title">Nos vehicules</h1>
+        <div class="images">
+            <ul>
+                <li class="car">
+                   <div>
+                       <img src="car1.jpg" alt="">
+                   </div>
+                   <span>LAMBORGHINI</span>
+                </li>
+                <li class="car">
+                    <div>
+                        <img src="car2.jpg" alt="">
+                    </div>
+                    <span>LAMBORGHINI</span>
+                 </li>
+                 <li class="car">
+                    <div>
+                        <img src="car3.jpg" alt="">
+                    </div>
+                    <span>LAMBORGHINI</span>
+                 </li>
+                 <li class="car">
+                    <div>
+                        <img src="car4.jpg" alt="">
+                    </div>
+                    <span>FERRARI</span>
+                 </li>
+                 <li class="car">
+                    <div>
+                        <img src="car5.jpg" alt="">
+                    </div>
+                    <span>FERRARI</span>
+                 </li>
+                 <li class="car">
+                    <div>
+                        <img src="car6.jpg" alt="">
+                    </div>
+                    <span>FERRARI</span>
+                 </li>
+            </ul>
+        </div>
+    </section>
+
+    <footer>
+        <p>Vous aimez les sensations fortes, nous aussi !!!</p>
+    </footer>
+
+    <script>
+        
+        var menu_toggle = document.querySelector('.menu_toggle');
+        var menu = document.querySelector('.menu');
+        var menu_toggle_span = document.querySelector('.menu_toggle span');
+
+        menu_toggle.onclick = function(){
+            menu_toggle.classList.toggle('active');
+            menu_toggle_span.classList.toggle('active');
+            menu.classList.toggle('responsive') ;
+        }
+
+    </script>
 </body>
 </html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Luxe </title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/3010b1eaf1.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<header>
+    <!-- menu responsive -->
+    
+    <div class="menu_toggle">
+        <span></span>
+    </div>
+
+    <div class="logo">
+        <p><span>Luxe</span>Cars</p>
+    </div>
+    <ul class="menu">
+        <li><a href="index.html">Acceuil</a></li>
+        <li><a href="page3.html">Vehicules</a></li>
+        <li><a href="page2.html">Services</a></li>
+    </ul>
+
+</header>
+   
+   <!-- section services -->
+
+   <section id="services">
+    <h1 class="section_title">Nos Services</h1>
+    <div class="list_services">
+        <div class="service">
+            <i class="fa-solid fa-screwdriver-wrench"></i>
+            <h3>Conseil Achat</h3>
+            <p>Nous pouvons vous conseiller sur l'achat de votre véhicules de sport.</p>
+             <a href="#" class="read_more">Lire Plus</a>
+        </div>
+        <div class="service">
+            <i class="fa-solid fa-screwdriver-wrench"></i>
+            <h3>Visite de nos salons</h3>
+            <p>Grace a nos partenaires nous pourons vous faires visiter nos salons et vous faire essayer, peut etre votre prochain véhicules de sport.</p>
+             <a href="#" class="read_more">Lire Plus</a>
+        </div>
+        <div class="service">
+            <i class="fa-solid fa-screwdriver-wrench"></i>
+            <h3>Nettoyage</h3>
+            <p>Nos partenaires pourront remettre vos véhicules en état comme si il sortait d'usines.</p>
+             <a href="#" class="read_more">Lire Plus</a>
+        </div>
+    </div>
+</section>
