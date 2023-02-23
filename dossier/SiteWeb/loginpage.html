@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Portail de connexion</title>
+</head>
+<body>
+	<h1>Connectez-vous</h1>
+	<form action="index.html" method="post">
+		<label for="username">Nom d'utilisateur:</label>
+		<input type="text" id="username" name="username" required><br><br>
+		<label for="password">Mot de passe:</label>
+		<input type="password" id="password" name="password" required><br><br>
+		<input type="submit" value="Se connecter">
+	</form>
+
+	<!-- Vérifier si le nom d'utilisateur et le mot de passe sont corrects -->
+	<php
+		if (isset($_POST[username]) && isset($_POST[password])) {
+			$username = $_POST[username];
+			$password = $_POST[password];
+			if ($username = 'admin' && $password = 'admin') {
+				header(Location: index.html);
+				exit();
+			} else {
+				echo < p> style="color:red;">Nom d\'utilisateur ou mot de passe incorrect.</p>';
+			}
+		}
+	?>
+</body>
+</html>

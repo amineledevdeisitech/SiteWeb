@@ -4,18 +4,19 @@
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title> Car Luxe </title>
+<title>Car Luxe </title>
 <link rel="stylesheet" href="style.css">
 <script src="https://kit.fontawesome.com/3010b1eaf1.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    
 <!-- header  -->
 <header>
 <!-- menu responsive -->
         
 <div class="menu_toggle">
+<span></span>
 </div>
-
 <div class="logo">
 <p><span>Luxe</span>Cars</p>
 </div>
@@ -23,18 +24,15 @@
 <li><a href="index.html">Acceuil</a></li>
 <li><a href="page2.html">Services</a></li>
 <li><a href="page3.html">Vehicules</a></li>
-
 </ul>
-    
 </header>
 <!-- section Acceuil -->
 <section id="home">
 <div class="left">
-<h1>Les <span> Plus belles</span> voitures sportive</h1>
-<p>Ici nous pouvons vous proposer les meilleur véhicules sportives</p>
+<h1>D'autres<span>Modèles</span>Sublime</h1>
 </div>
 <div class="right">
-<img src="img1.png">
+<img src="img8.png">
 </div>
 </section>
 <!-- section vehicule -->
@@ -43,22 +41,22 @@
 <div class="images">
 <ul>
 <li class="car">
+    <div>
+        <a href="page4.html"> <img src="car7.jpg"> </a >
+        </div>
+    <span>KOENIGSEGG</span>
+    </li>
+    <li class="car">
 <div>
-<img src="car1.jpg" alt="">
-</div>
+    <a href="page4.html"> <img src="car2.jpg"> </a >
+    </div>
 <span>LAMBORGHINI</span>
 </li>
 <li class="car">
 <div>
-<img src="car2.jpg" alt="">
+    <a href="page4.html"> <img src="car8.jpg"> </a >
 </div>
-<span>LAMBORGHINI</span>
-</li>
-<li class="car">
-<div>
-<img src="car3.jpg" alt="">
-</div>
-<span>LAMBORGHINI</span>
+<span>PORSHE</span>
 </li>
 <li class="car">
 <div>
@@ -68,9 +66,9 @@
 </li>
 <li class="car">
 <div>
-<img src="car5.jpg" alt="">
+<img src="car9.jpg" alt="">
 </div>
-<span>FERRARI</span>
+<span>MERCEDES</span>
 </li>
 <li class="car">
 <div>
@@ -81,17 +79,3 @@
 </ul>
 </div>
 </section>
-<footer>
-<p>Vous aimez les sensations fortes, nous aussi !!!</p>
-</footer>
-<script>
-var menu_toggle = document.querySelector('.menu_toggle');
-var menu = document.querySelector('.menu');
-var menu_toggle_span = document.querySelector('.menu_toggle span');
-menu_toggle.onclick = function(){
-menu_toggle.classList.toggle('active');
-menu_toggle_span.classList.toggle('active');
-menu.classList.toggle('responsive') ;}
-</script>
-</body>
-</html>
